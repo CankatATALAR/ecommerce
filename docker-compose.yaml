@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    image: 'spring-ecommerce:latest'
+    build:
+      context: .
+    container_name: spring-ecommerce
+    ports:
+      - "9090:8080"
